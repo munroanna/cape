@@ -1,9 +1,13 @@
 <template>
   <div id="app">
       <header>
-      <img src="./assets/capeLogo.png" alt="capelogo" id="logo">
-          <img src="./assets/duke.jpg" alt="dukelogo" id="duke">
-      <h1 id="big">Duke University CAPE Program</h1>
+          <ul id="top">
+      <li id="cape"><img src="./assets/capeLogo.png" alt="capelogo" id="logo"></li>
+              <li id="htitle"><h1 id="big">Duke University CAPE</h1></li>
+         <li id="dukie"><img src="./assets/duke.jpg" alt="dukelogo" id="duke"></li>
+              </ul>
+          </header>
+      <div id="bod">
       <ul id="navbar">
             <li class="option" @click="home">Home</li>
           <li class="option" @click="meetStudents">Meet the Students</li>
@@ -12,7 +16,6 @@
           <li class="option" @click="joinCape">Join CAPE</li>
           <li class="option" @click="donateHere">Donate</li>
         </ul>
-          </header>
       <hr/>
       <div v-show="intro">
       <h4 id="introex">CAPE (Collegiate Athlete Pre-Medical Experience) is a year-round program offered by Duke University Medical Center to female student-athletes on Duke University's thirteen collegiate varsity athletic teams. The program provides participants with a wide variety of clinical experiences that provide exposure to the world of Medicine. CAPE is designed to engage some of the nation's highest achieving young women in medical science and to assist them toward careers in Medicine.
@@ -26,11 +29,50 @@
           <q>We’re helping to change medicine a little bit and grow amazing young women into amazing doctors.</q>
       <p id="name">Terry Kruger</p>
       <p>Associate Director, CAPE</p></div><br>
-          <div id="bigimag"><hr><br>
-          <img src="./assets/Picture1.png" alt="womenandsports" id="womensports">
-      </div>
-          <hr>
           </div>
+          <div v-show="meetS">
+            <ul id="studpics">
+                <li><img src="./assets/img1.png">
+                    <p class="blue">Johanna E. Bischof</p>
+                    <p class="caption">Duke Undergraduate ’05
+                    Duke Medical School ’10<br>
+                    Field Hockey<br>
+                    2003 Team Captain, All-America Selection<br>
+                    EM Resident Hennepin County Hospital<br>
+                    Attending ED physician,  Portland, OR
+                    </p>
+                </li>
+                <li><img src="./assets/img2.png">
+                    <p class="blue">Emily Waner</p><p class="caption">
+                Duke Undergraduate ’08<br>
+                Duke Medical School ’13<br>
+                Basketball<br>
+                Hospitalist <br>
+                University of  Washington</p>
+                </li>
+                <li><img src="./assets/img3.png">
+                    <p class="blue">Abby Johnston</p>
+                        <p class="caption">CAPE Duke Undergraduate ’12<br>
+                        Diving<br>
+                        2x All-America Selection, USA Diving Team,  <br>
+                        2012 Olympic Silver Medal <br>
+                        Synchro Diving <br>
+                        3nd  Year Duke Medical School<br>
+                        2016 Olympian 3M Springboard<br>
+                        </p>
+                </li>
+                <li><img src="./assets/img4.png">
+                    <p class="blue">Elizabeth Williams</p>
+                    <p class="caption">Duke Undergraduate ’15<br>
+                    Basketball<br>
+                    No. 1 High School Ranked Player<br>
+                    WNBA <br>
+                        Atlanta Dream</p>
+                </li>
+            </ul>
+              <p id="whoare">CAPE participants are female student athletes from Duke University who have expressed interest in careers in Medicine.</p>
+    
+        </div>
       <div v-show="meetL">
         <div id="d">
                 <div id="direc" @click="showdirec"><hr/><h2>Directors</h2><hr/></div>
@@ -207,6 +249,17 @@
                       </div>
     
                 </div>
+          <div v-show="donate">
+            <p class="b">If you would like to donate to CAPE, you can either donate online <a>here</a>, or you can print this form and fill it out as you like. All donations are much appreciated!</p>
+              <div id="bigimag"><hr><br>
+          <img src="./assets/Picture1.png" alt="womenandsports" id="womensports">
+      </div><hr>
+    
+    
+        </div>
+    
+    
+    </div>
     
   </div>
 </template>
@@ -262,7 +315,7 @@ export default {
         },
         curriculum(){
             this.intro=false;
-            this.meetS=true;
+            this.meetS=false;
             this.meetL=false;
             this.join=false;
             this.donate=false;
@@ -281,7 +334,7 @@ export default {
             this.meetS=false;
             this.meetL=false;
             this.join=false;
-            //this.donate=true;
+            this.donate=true;
             this.curr=false;
         },
         showdirec(){
@@ -380,7 +433,7 @@ export default {
 </script>
 
 <style lang="scss">
-    body{
+    #bod{
         background: #fffff4;
 /*        background-image: url("./assets/grey3.jpg");*/
         color: black;
@@ -388,17 +441,27 @@ export default {
         margin: 0 auto;
         font-family: "Helvetica"
     }
+    body{
+        background-color:#fffff4; 
+    }
 #app {
   text-align: center;
-  margin-top: 60px;
 }
+        header{
+        max-width: 100%;
+/*
+        background-image: url("./assets/header.jpg");
+        background-size: cover;
+*/
+    }
 
     #big{
-        font-size: 41pt;
-        font-family: "Goudy Oldstyle FS Regular";
+        font-size: 45pt;
+        font-family: "Helvetica";
         font-weight: 100;
-        margin-left: 100px;
-        color: #420d09;
+        color: darkred;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
 
 a {
@@ -415,19 +478,31 @@ a {
         cursor: pointer;
         background-color: goldenrod;
     }
+    #duke{
+        max-width: 80%;
+        border: solid medium darkred;
+    }
     #logo{
-        max-width: 20%;
-        position: absolute;
-        top: 2%;
-        left: 2%;
+        max-width: 80%;
+    }
+    #top{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #cape{
+        width: 27%;
+        
+    }
+    #dukie{
+        width: 12%;
+  
+    }
+    #htitle{
+  
     }
     #name{
-    }
-    header{
-/*
-        background-image: url("./assets/header.jpg");
-        background-size: cover;
-*/
     }
     #currs{
         display: flex;
@@ -610,13 +685,36 @@ a {
         margin-top: 1%;
         margin-bottom: 1%;
     }
-    #duke{
-        max-width: 10%;
-        position: absolute;
-        right: 2%;
-        top: 5%;
-    }
     .curric{
         text-decoration: underline;
+    }
+    #studpics{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #studpics li{
+        width: 20%;
+        border: solid thin darkblue;
+    }
+    #studpics li img{
+        width: 100%; 
+    }
+    .caption{
+        font-size: 10pt;
+        color: darkblue;
+    }
+    .blue{
+        font-weight: bold;
+        color: darkblue;
+        text-decoration: underline;
+    }
+    #whoare{
+        font-size: 14pt;
+        border: solid thin #000080;
+        padding: 10px;
+        color: lightblue;
+        background: darkred;
     }
 </style>

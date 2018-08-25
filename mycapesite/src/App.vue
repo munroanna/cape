@@ -250,7 +250,7 @@
     
                 </div>
           <div v-show="donate">
-            <p class="b">If you would like to donate to CAPE, you can either donate online <a>here</a>, or you can print this form and fill it out as you like. All donations are much appreciated!</p>
+            <p class="b">If you would like to donate to CAPE, you can either donate with <a href="https://munroanna.github.io/cape/mycapesite/files/donate.pdf" target="_blank">this form</a>. All donations are much appreciated!</p>
               <div id="bigimag"><hr><br>
           <img src="./assets/Picture1.png" alt="womenandsports" id="womensports">
       </div><hr>

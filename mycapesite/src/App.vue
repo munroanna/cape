@@ -20,7 +20,7 @@
       <div v-show="intro">
       <h4 id="introex">CAPE (Collegiate Athlete Pre-Medical Experience) is a year-round program offered by Duke University Medical Center to female student-athletes on Duke University's thirteen collegiate varsity athletic teams. The program provides participants with a wide variety of clinical experiences that provide exposure to the world of Medicine. CAPE is designed to engage some of the nation's highest achieving young women in medical science and to assist them toward careers in Medicine.
         </h4>
-          <p id="readmore">If you would like to read more about CAPE, or download the complete information on CAPE you can read more <a href="https://munroanna.github.io/cape/mycapesite/files/CAPE_INFO.pdf">here</a></p>
+          <p id="readmore">If you would like to read more about CAPE, or download the complete information on CAPE you can read more <a target="_blank" href="https://munroanna.github.io/cape/mycapesite/files/CAPE_INFO.pdf">here</a></p>
       <div id="images">
           <img class="smaller" src="./assets/images/fhock.jpg" alt="fieldhockey">
           <img class="smaller" src="./assets/images/soccer.jpg" alt="soccer">

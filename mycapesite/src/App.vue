@@ -2,9 +2,9 @@
   <div id="app">
       <header>
           <ul id="top">
-      <li id="cape"><img src="./assets/capeLogo.png" alt="capelogo" id="logo"></li>
+      <li id="cape"><img src="./assets/images/capeLogo.png" alt="capelogo" id="logo"></li>
               <li id="htitle"><h1 id="big">Duke University CAPE</h1></li>
-         <li id="dukie"><img src="./assets/duke.jpg" alt="dukelogo" id="duke"></li>
+         <li id="dukie"><img src="./assets/images/duke.jpg" alt="dukelogo" id="duke"></li>
               </ul>
           </header>
       <div id="bod">
@@ -20,11 +20,11 @@
       <div v-show="intro">
       <h4 id="introex">CAPE (Collegiate Athlete Pre-Medical Experience) is a year-round program offered by Duke University Medical Center to female student-athletes on Duke University's thirteen collegiate varsity athletic teams. The program provides participants with a wide variety of clinical experiences that provide exposure to the world of Medicine. CAPE is designed to engage some of the nation's highest achieving young women in medical science and to assist them toward careers in Medicine.
         </h4>
-          <p id="readmore">If you would like to read more about CAPE, or download the complete information on CAPE you can read more <a href="file:///Users/annamunro/Desktop/cape/mycapesite/src/assets/CAPE_DONATION_FORM.pdf">here</a></p>
+          <p id="readmore">If you would like to read more about CAPE, or download the complete information on CAPE you can read more <a href="https://munroanna.github.io/cape/mycapesite/files/CAPE_INFO.pdf">here</a></p>
       <div id="images">
-          <img class="smaller" src="./assets/fhock.jpg" alt="fieldhockey">
-          <img class="smaller" src="./assets/soccer.jpg" alt="soccer">
-          <img class="smaller" src="./assets/trophy.jpg" alt="womanwithtrophy"></div>
+          <img class="smaller" src="./assets/images/fhock.jpg" alt="fieldhockey">
+          <img class="smaller" src="./assets/images/soccer.jpg" alt="soccer">
+          <img class="smaller" src="./assets/images/trophy.jpg" alt="womanwithtrophy"></div>
           <div id="quote">
           <q>We’re helping to change medicine a little bit and grow amazing young women into amazing doctors.</q>
       <p id="name">Terry Kruger</p>
@@ -32,7 +32,7 @@
           </div>
           <div v-show="meetS">
             <ul id="studpics">
-                <li><img src="./assets/img1.png">
+                <li><img src="./assets/images/img1.png">
                     <p class="blue">Johanna E. Bischof</p>
                     <p class="caption">Duke Undergraduate ’05
                     Duke Medical School ’10<br>
@@ -42,7 +42,7 @@
                     Attending ED physician,  Portland, OR
                     </p>
                 </li>
-                <li><img src="./assets/img2.png">
+                <li><img src="./assets/images/img2.png">
                     <p class="blue">Emily Waner</p><p class="caption">
                 Duke Undergraduate ’08<br>
                 Duke Medical School ’13<br>
@@ -50,7 +50,7 @@
                 Hospitalist <br>
                 University of  Washington</p>
                 </li>
-                <li><img src="./assets/img3.png">
+                <li><img src="./assets/images/img3.png">
                     <p class="blue">Abby Johnston</p>
                         <p class="caption">CAPE Duke Undergraduate ’12<br>
                         Diving<br>
@@ -61,7 +61,7 @@
                         2016 Olympian 3M Springboard<br>
                         </p>
                 </li>
-                <li><img src="./assets/img4.png">
+                <li><img src="./assets/images/img4.png">
                     <p class="blue">Elizabeth Williams</p>
                     <p class="caption">Duke Undergraduate ’15<br>
                     Basketball<br>
@@ -79,7 +79,7 @@
           <div v-show="dshow" id="alld">
           <div id="directors">
             <div class="dic">
-                <img src="./assets/henry.png" alt="henryheadshot" class="headshot">
+                <img src="./assets/images/henry.png" alt="henryheadshot" class="headshot">
             <h3>Henry S. Friedman, MD</h3>
             <h4>CO-DIRECTOR</h4>
             <ul class="dlist">
@@ -93,7 +93,7 @@
                 </p>
                 </div>
                         <div class="dic">
-            <img src="./assets/allan.png" alt="allanheadshot" class="headshot">
+            <img src="./assets/images/allan.png" alt="allanheadshot" class="headshot">
             <h3>Allan H. Friedman, MD</h3>
             <h4>CO-DIRECTOR</h4>
             <ul class="dlist">
@@ -107,7 +107,7 @@
                 </div>
         </div><br>
                       <div id="tk">
-            <img src="./assets/tk.png" alt="tkheadshot" class="headshot">
+            <img src="./assets/images/tk.png" alt="tkheadshot" class="headshot">
             <h3>Terry Kruger</h3>
             <h4>ASSOCIATE DIRECTOR</h4>
             <ul class="dlist">
@@ -252,7 +252,7 @@
           <div v-show="donate">
             <p class="b">If you would like to donate to CAPE, you can either donate with <a href="https://munroanna.github.io/cape/mycapesite/files/donate.pdf" target="_blank">this form</a>. All donations are much appreciated!</p>
               <div id="bigimag"><hr><br>
-          <img src="./assets/Picture1.png" alt="womenandsports" id="womensports">
+          <img src="./assets/images/Picture1.png" alt="womenandsports" id="womensports">
       </div><hr>
     
     

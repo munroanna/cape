@@ -489,7 +489,7 @@ a {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
     #cape{
         width: 27%;
